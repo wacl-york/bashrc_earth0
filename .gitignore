@@ -51,3 +51,6 @@ tags
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# aspell
+*.bak
