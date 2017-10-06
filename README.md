@@ -11,12 +11,29 @@ $ ssh USERNAME@earth0.york.ac.uk
 A `.bashrc` file can contain any commands that you might use at the bash prompt. A typical use for the `.bashrc` file is environment modification, which is what the `.bashrc` file found in this repository is for. You can read more about `.bashrc` files (and other shell initialisation files) [here](http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_01.html).
 
 ## Using this `.bashrc` file
+
+### Overwriting your own `bashrc`
 To use the `.bashrc` file contained within this repository, simply download the file and place it in your `earth0` home directory with the file name `.bashrc`. **NOTE:** performing the following operation will overwrite any existing `.bashrc` in your `earth0` home directory. It is advised to make a copy of your existing `.bashrc` file before installing the `.bashrc` from this repository.
 
 ```
 $ cd /work/home/USERNAME
 $ wget -O .bashrc https://raw.githubusercontent.com/wacl-york/bashrc_earth0/master/scripts/bashrc
 ```
+
+### Alongside your own `.bashrc`
+The `.bashrc` in this repository is available on `earth0` at the following location:
+
+```
+/etc/bashrc_earth0/scripts/bashrc
+```
+
+and can be used in your own `.bashrc` by adding the following line to your `.bashrc`, ideally as the first line:
+
+```
+source /etc/bashrc_earth0/scripts/bashrc
+```
+
+Putting this as the first line of your `.bashrc` is ideal because the `.bashrc` in this repository first overwrites the PATH.
 
 ## Support & Troubleshooting
 You can contact me at <killian.murphy@york.ac.uk> in the event of any issues with this `.bashrc`, or if you would like to go through the initial setup and confirm that the `.bashrc` is working correctly.
