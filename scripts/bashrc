@@ -53,3 +53,8 @@ export GC_BIN="/opt/netcdf/complete/bin"
 export GC_INCLUDE="/opt/netcdf/complete/include"
 export GC_LIB="/opt/netcdf/complete/lib"
 export OMP_STACKSIZE="500m"
+
+#===============================================================================
+# SGI MPT:
+#===============================================================================
+export PATH="/opt/hpe/hpc/mpt/mpt-2.16/bin:${PATH}"
